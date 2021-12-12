@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:hello_world/TestPage2.dart';
 
@@ -11,10 +9,13 @@ class TestPage1 extends StatelessWidget {
         body: Center(
             child: TextButton(
                 onPressed: () => {
-                      Navigator.of(context)
-                          .push(MaterialPageRoute(builder: (context) {
+                      Navigator.pushNamed(context, "/test2")
+                      // or
+//                      Navigator.of(context).pushNamed("/test2")
+                      // or
+/*                           .push(MaterialPageRoute(builder: (context) {
                         return TestPage2();
-                      }))
+                      })) */
                     },
                 child: Text("進む", style: TextStyle(fontSize: 80)))));
   }
