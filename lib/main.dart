@@ -1,8 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:hello_world/TestPage1.dart';
-import 'package:hello_world/TestPage2.dart';
-import 'package:hello_world/TestPage3.dart';
+
+
+import 'TestPage1.dart';
+import 'TestPage2.dart';
+import 'TestPage3.dart';
+
 
 void main() {
   runApp(MyApp());

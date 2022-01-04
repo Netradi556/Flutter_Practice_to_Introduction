@@ -29,6 +29,42 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^1.10.6
+  firebase_auth: ^3.3.4
+  firebase_remote_config: ^1.0.3
+  firebase_analytics: ^9.0.4
+  cloud_firestore: ^3.1.5
+  flutter_riverpod: ^1.0.3
+  freezed: ^1.1.0
+  dio: ^4.0.4 # for API connection
+  flutter_screenutil: ^5.0.2 # 文字などの自動調整用
+  url_launcher: ^6.0.17 # URLをブラウザで開く用
+  shared_preferences: ^2.0.11 # 設定ファイルの読み書き、初回起動の状態管理用
+  flutter_native_splash: ^1.3.2 # スプラッシュ画面用
+  tutorial_coach_mark: ^1.2.1 # チュートリアルのクローズアップ用
+  flutter_overboard: ^3.0.0 # 初回起動スライドショー実装用
+  introduction_screen: ^2.1.0 # 初回起動用スライドショー実装用
+  flutter_launcher_icons: ^0.9.2 # iOS, Androidのアイコン利用
+  image_picker: ^0.8.4+4 # 写真選択・撮影用
+  flutter_svg: ^1.0.0 # SVGファイルの表示用
+  flutter_jailbreak_detection: ^1.8.0 # JailbreakしたiOSを検知
+  dart_ipify: ^1.1.1 # IPアドレス、MACアドレス取得用
+  package_info: ^2.0.2 # アップデート矯正するために利用
+  flutter_secure_storage: ^5.0.2 # ユーザーBAN用
+  google_fonts: ^2.1.1 # Google fonts
+
+
+  # flutter flowに合わせて入れたやつ
+  page_transition: ^2.0.4 # page transition
+  google_maps_flutter: ^2.1.1 # Google maps
+  json_path: ^0.3.1 # Json path
+  timeago: ^3.1.0 # タイムスタンプ用
+  auto_size_text: 3.0.0
+  font_awesome_flutter: 8.11.0
+  sign_in_with_apple: ^3.3.0
+  google_sign_in: ^5.2.1
+  rxdart: ^0.27.3 # 非同期処理の拡張？
+
 
 
 
@@ -36,15 +72,18 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+
+flutter_native_splash:
+  image: "assets/images/demo.png"
+  color: "4DD0E1"
+
+
+
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_driver:
-    sdk: flutter
-  test: any
-
-
-
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -68,6 +107,10 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/images/
+    - assets/svg/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
